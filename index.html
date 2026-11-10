@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional - Ariadna Lopez</title>
+    <style>
+        /* Configuración general */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf2f4;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Barra de navegación superior */
+        .navbar {
+            background-color: #facad5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-weight: bold;
+            color: #e91e63;
+            font-size: 1.2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: #2c2c2c;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e91e63;
+        }
+
+        /* Sección Hero (Inicio) */
+        .hero {
+            background-color: #ffffff;
+            margin: 2rem auto;
+            padding: 2.5rem 1.5rem;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin: 0.5rem 0 0.2rem 0;
+            font-size: 2.2rem;
+            color: #e91e63;
+            font-family: 'Georgia', serif;
+        }
+
+        .hero p {
+            color: #38bdf8;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        /* Contenedor de la Foto de Perfil (Circular perfecto y centrada) */
+        .foto-perfil {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;          /* Transforma la foto rectangular en círculo */
+            object-fit: cover;           /* Mantiene las proporciones de la imagen sin deformarla */
+            border: 4px solid #f48fb1;   /* Borde estético rosado */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            margin: 0 auto 1.5rem auto;  /* Centra horizontalmente la foto y la separa del texto abajo */
+            display: block;
+        }
+
+        /* Secciones generales */
+        .seccion {
+            background-color: #ffffff;
+            margin: 1.5rem auto;
+            padding: 1.5rem;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #2c2c2c;
+            border-bottom: 2px solid #f48fb1;
+            padding-bottom: 0.3rem;
+            margin-top: 0;
+        }
+
+        /* Cuadrícula de proyectos */
+        .grid-proyectos {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tarjeta {
+            background-color: #fff9fb;
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 4px solid #e91e63;
+        }
+
+        .tarjeta h3 {
+            margin-top: 0;
+            color: #e91e63;
+        }
+
+        /* Pie de página / Contacto */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #facad5;
+            color: #2c2c2c;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Mi Portafolio</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <!-- Foto de perfil circular con la imagen insertada -->
+        <img src="image_1.png" alt="Foto de perfil de Ariadna Lopez" class="foto-perfil">
+
+        <h1>¡Hola! Soy Ariadna Lopez</h1>
+        <p>T.S.U. en Análisis y Diseño de Sistemas</p>
+    </section>
+
+    <section id="sobre-mi" class="seccion">
+        <h2>Sobre mí</h2>
+        <p>Estudiante analítica y enfocada en la resolución de problemas mediante el desarrollo de software, modelado de sistemas y optimización de procesos.</p>
+    </section>
+
+    <section id="proyectos" class="seccion">
+        <h2>Proyectos Destacados</h2>
+        <div class="grid-proyectos">
+            <div class="tarjeta">
+                <h3>Sistema de Control de Inventario</h3>
+                <p>Diseño y análisis del flujo de datos para la gestión automatizada de productos e inventarios.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Modelado de Base de Datos</h3>
+                <p>Estructura relacional optimizada para la administración eficiente de registros y consultas.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Interesado en colaborar o revisar mis proyectos?</p>
+        <p><strong>Email:</strong> alexalopp19@gmail.com</p>
+    </footer>
+
+</body>
+</html>
